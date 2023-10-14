@@ -1,0 +1,46 @@
+<!-- <%- include('partials/header'); -%> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/css/style.css">
+
+  <title>Blog</title>
+</head>
+<body>
+  <div class="blog-container">
+    
+        <div class="content-container">
+          <h1>
+            <!-- Latest Posts -->
+            <%= title %>
+            <hr>
+          </h1>
+        </div>
+  
+        <div class="content-container">
+         
+            <!-- Latest Posts -->
+            <img src= "/public/uploads/<%= image %>" alt="Post Image" />
+
+        </div> 
+  
+        <div class="content-container">
+          
+          <p class="lead post-content" style="padding-block: 20px;">
+              <%= content %>
+          </p>
+  
+          
+        </div>
+    
+  </div>
+  
+  
+</body>
+</html>
+         
+
+<%- include('partials/footer'); -%>

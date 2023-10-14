@@ -1,0 +1,42 @@
+<%- include('partials/header'); -%>
+<div class="blog-container">
+  <div class="col-md-12">
+
+    <div >
+      <div class="container">
+        <h1 >
+          Latest Posts
+          <hr>
+        </h1>
+        
+      </div>
+    </div>
+
+    <% for(var i=0;i<posts.length;i++){ %>
+    <div >
+      <div class="container">
+        <h1 >
+          <%= posts[i].title %>
+        </h1>
+        <p >
+
+          <%= posts[i].content.substring(0,300) %>...
+        </p>
+        <div class="row post-details">
+          <label class="post-published">Published On <span class="date">
+              1 Jan 2020
+            </span></label>
+          <a href="/posts/<%= posts[i].title %>"><button class="read-more">
+            Read More
+          </button></a>
+        </div>
+      </div>
+    </div>
+
+    <% } %>
+
+  </div>
+  
+</div>
+
+<%- include('partials/footer'); -%>

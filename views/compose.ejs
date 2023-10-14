@@ -1,0 +1,57 @@
+<!-- <%- include('partials/header'); -%> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../public/css/style.css">
+
+    <title>Blog</title>
+</head>
+<body>
+
+    <div class=" compose-container">
+        <form action="/compose" method="post" enctype="multipart/form-data">
+            
+                <h1 class="post-title ">
+                    Write Something ..
+                </h1>
+             <div class="flex"></div>
+                <input type="text" name="title" class=" title-input" placeholder="Your post title"/>
+                <input type="file" name="image" class="file-input" placeholder="Post Imaage" >
+                
+                <textarea placeholder="Your post content goes here...." name="content" type="text" 
+                    class="compose-input"></textarea>
+             </div>
+            <div >
+                <button type="submit" class="primary-button  read-more publish-btn">
+                    Publish
+                </button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+<!-- <div class=" compose-container">
+    <form action="/compose" method="post" enctype="multipart/form-data">
+        
+            <h1 class="post-title ">
+                Write Something ..
+            </h1>
+         <div class="flex"></div>
+            <input type="text" name="title" class=" title-input" placeholder="Your post title"/>
+            <input type="file" name="image" class="file-input" placeholder="Post Imaage" >
+            <textarea placeholder="Your post content goes here...." name="content" type="text" 
+                class="compose-input"></textarea>
+         </div>
+        <div >
+            <button type="submit" class="primary-button  read-more publish-btn">
+                Publish
+            </button>
+        </div>
+    </form>
+</div> -->
+
+<%- include('partials/footer'); -%>
